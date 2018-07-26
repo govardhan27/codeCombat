@@ -1,0 +1,30 @@
+{
+  "name": "code-combat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.279.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "i": "^0.3.6",
+    "mongoose": "^5.2.4",
+    "multer": "^1.3.1",
+    "nodemon": "^1.18.3",
+    "ramda": "^0.25.0",
+    "s3-ls": "^2.0.1",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
