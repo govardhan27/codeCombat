@@ -40,7 +40,7 @@ module.exports = app => {
             expressionObj.key = R.toLower(expressionObj.key);
             //console.log(expressionObj.key);
             return imageModel.find({
-                'category_name': expressionObj.key
+                'category_name': { $regex: expressionObj.key}
             }).exec()
                 .then(existing => {
                     res.send(existing);
